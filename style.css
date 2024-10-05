@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #123;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 1920px) {
+
+    .hero {
+        display: grid;
+        place-items: center;
+        background-color: #123;
+        box-shadow: 0 0 170px whitesmoke;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .navbar div {
+        font-size: 2rem;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(90deg, white, #123);
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        display: flex;
+        align-items: end;
+        gap: 2rem;
+    }
+
+    .navbar ul li {
+        font-weight: 500;
+        color: whitesmoke;
+        font-size: 1.1rem;
+        list-style: none;
+        cursor: pointer;
+        transition: color 0.3s ease-out;
+    }
+
+
+    .navbar ul li:hover {
+        color: rgb(224, 78, 52);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        /* background-color: red; */
+        color: whitesmoke;
+    }
+
+    .box {
+        font-weight: 900;
+        width: 80%;
+        font-size: 7rem;
+    }
+
+    .icon {
+        display: none;
+        z-index: 100;
+    }
+}
+
+
+/* 852 * 1280 */
+/* 912 * 1368 */
+/* 1024 * 1366 */
+/* 820 * 1180 -- thing start to change */
+
+/* change from 870 */
+@media only screen and (max-width: 1180px) {
+    .navbar {
+        width: 80%;
+        margin: 1rem;
+        /* width: 95%; */
+        position: relative;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    .navbar ul {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.121);
+        height: 100vh;
+        top: 4rem;
+        width: 50vw;
+        right: -7rem;
+        display: none;
+    }
+
+    .navbar ul li {
+        font-size: 36px;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        font-weight: 600;
+    }
+
+    .box {
+        /* display: none; */
+        z-index: -1;
+        font-size: 4rem;
+    }
+
+    .icon {
+        display: block;
+        font-size: 2rem;
+        /* background-color: green; */
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .navbar {
+        width: 80%;
+        margin: 1rem;
+        /* width: 95%; */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    .navbar ul {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.121);
+        /* height: 100vh; */
+        top: 4rem;
+        width: 50vw;
+        right: -7rem;
+        display: none;
+    }
+
+    .navbar ul li {
+        font-size: 1rem;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        font-weight: 800;
+    }
+
+    .box {
+        /* display: none; */
+        /* top: -3rem; */
+        z-index: -1;
+        font-size: 2.8rem;
+    }
+
+    .icon {
+        display: block;
+        font-size: 2rem;
+        /* background-color: green; */
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .navbar {
+        width: 95%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    .navbar ul {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.121);
+        /* height: 100vh; */
+        top: 4rem;
+        width: 50vw;
+        right: 0;
+        display: none;
+    }
+
+    .navbar ul li {
+        font-size: 1rem;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        font-weight: 800;
+    }
+
+    .box {
+        /* display: none; */
+        z-index: -1;
+        font-size: 1.8rem;
+    }
+
+    .icon {
+        display: block;
+        font-size: 2rem;
+        /* background-color: green; */
+    }
+}
